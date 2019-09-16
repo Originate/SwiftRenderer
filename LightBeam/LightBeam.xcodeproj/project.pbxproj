@@ -1,0 +1,352 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7969662D2330205400D44AC2 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7969662C2330205400D44AC2 /* main.swift */; };
+		796966342330212700D44AC2 /* LightBeamModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796966332330212700D44AC2 /* LightBeamModel.swift */; };
+		796966362330217500D44AC2 /* LightSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796966352330217500D44AC2 /* LightSource.swift */; };
+		796966382330227000D44AC2 /* ParticipatingMedia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796966372330227000D44AC2 /* ParticipatingMedia.swift */; };
+		7969663A2330229300D44AC2 /* Obstacle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796966392330229300D44AC2 /* Obstacle.swift */; };
+		7969663C233022B600D44AC2 /* ViewPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7969663B233022B600D44AC2 /* ViewPoint.swift */; };
+		7969663E2330230A00D44AC2 /* BeamRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7969663D2330230A00D44AC2 /* BeamRenderer.swift */; };
+		796966432330241000D44AC2 /* VizModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796966422330241000D44AC2 /* VizModel.swift */; };
+		79696646233024E700D44AC2 /* Visualizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79696645233024E700D44AC2 /* Visualizer.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		796966272330205400D44AC2 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		796966292330205400D44AC2 /* LightBeam */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LightBeam; sourceTree = BUILT_PRODUCTS_DIR; };
+		7969662C2330205400D44AC2 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		796966332330212700D44AC2 /* LightBeamModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightBeamModel.swift; sourceTree = "<group>"; };
+		796966352330217500D44AC2 /* LightSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightSource.swift; sourceTree = "<group>"; };
+		796966372330227000D44AC2 /* ParticipatingMedia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticipatingMedia.swift; sourceTree = "<group>"; };
+		796966392330229300D44AC2 /* Obstacle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Obstacle.swift; sourceTree = "<group>"; };
+		7969663B233022B600D44AC2 /* ViewPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewPoint.swift; sourceTree = "<group>"; };
+		7969663D2330230A00D44AC2 /* BeamRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeamRenderer.swift; sourceTree = "<group>"; };
+		796966422330241000D44AC2 /* VizModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VizModel.swift; sourceTree = "<group>"; };
+		79696645233024E700D44AC2 /* Visualizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Visualizer.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		796966262330205400D44AC2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		796966202330205400D44AC2 = {
+			isa = PBXGroup;
+			children = (
+				7969662B2330205400D44AC2 /* LightBeam */,
+				7969662A2330205400D44AC2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7969662A2330205400D44AC2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				796966292330205400D44AC2 /* LightBeam */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7969662B2330205400D44AC2 /* LightBeam */ = {
+			isa = PBXGroup;
+			children = (
+				79696644233024DB00D44AC2 /* Visualizer */,
+				79696641233023FB00D44AC2 /* Visualize */,
+				79696640233023C100D44AC2 /* Renderer */,
+				7969663F233023AA00D44AC2 /* Model */,
+				7969662C2330205400D44AC2 /* main.swift */,
+			);
+			path = LightBeam;
+			sourceTree = "<group>";
+		};
+		7969663F233023AA00D44AC2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				796966332330212700D44AC2 /* LightBeamModel.swift */,
+				796966352330217500D44AC2 /* LightSource.swift */,
+				796966372330227000D44AC2 /* ParticipatingMedia.swift */,
+				796966392330229300D44AC2 /* Obstacle.swift */,
+				7969663B233022B600D44AC2 /* ViewPoint.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		79696640233023C100D44AC2 /* Renderer */ = {
+			isa = PBXGroup;
+			children = (
+				7969663D2330230A00D44AC2 /* BeamRenderer.swift */,
+			);
+			path = Renderer;
+			sourceTree = "<group>";
+		};
+		79696641233023FB00D44AC2 /* Visualize */ = {
+			isa = PBXGroup;
+			children = (
+				796966422330241000D44AC2 /* VizModel.swift */,
+			);
+			path = Visualize;
+			sourceTree = "<group>";
+		};
+		79696644233024DB00D44AC2 /* Visualizer */ = {
+			isa = PBXGroup;
+			children = (
+				79696645233024E700D44AC2 /* Visualizer.swift */,
+			);
+			path = Visualizer;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		796966282330205400D44AC2 /* LightBeam */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 796966302330205400D44AC2 /* Build configuration list for PBXNativeTarget "LightBeam" */;
+			buildPhases = (
+				796966252330205400D44AC2 /* Sources */,
+				796966262330205400D44AC2 /* Frameworks */,
+				796966272330205400D44AC2 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LightBeam;
+			productName = LightBeam;
+			productReference = 796966292330205400D44AC2 /* LightBeam */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		796966212330205400D44AC2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Originate, Inc";
+				TargetAttributes = {
+					796966282330205400D44AC2 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 796966242330205400D44AC2 /* Build configuration list for PBXProject "LightBeam" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 796966202330205400D44AC2;
+			productRefGroup = 7969662A2330205400D44AC2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				796966282330205400D44AC2 /* LightBeam */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		796966252330205400D44AC2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				796966362330217500D44AC2 /* LightSource.swift in Sources */,
+				7969663C233022B600D44AC2 /* ViewPoint.swift in Sources */,
+				7969662D2330205400D44AC2 /* main.swift in Sources */,
+				796966432330241000D44AC2 /* VizModel.swift in Sources */,
+				7969663E2330230A00D44AC2 /* BeamRenderer.swift in Sources */,
+				79696646233024E700D44AC2 /* Visualizer.swift in Sources */,
+				7969663A2330229300D44AC2 /* Obstacle.swift in Sources */,
+				796966382330227000D44AC2 /* ParticipatingMedia.swift in Sources */,
+				796966342330212700D44AC2 /* LightBeamModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		7969662E2330205400D44AC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7969662F2330205400D44AC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		796966312330205400D44AC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2NJ3H49QDJ;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		796966322330205400D44AC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2NJ3H49QDJ;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		796966242330205400D44AC2 /* Build configuration list for PBXProject "LightBeam" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7969662E2330205400D44AC2 /* Debug */,
+				7969662F2330205400D44AC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		796966302330205400D44AC2 /* Build configuration list for PBXNativeTarget "LightBeam" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				796966312330205400D44AC2 /* Debug */,
+				796966322330205400D44AC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 796966212330205400D44AC2 /* Project object */;
+}
