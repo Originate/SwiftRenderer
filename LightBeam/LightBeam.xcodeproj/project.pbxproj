@@ -74,15 +74,15 @@
 			isa = PBXGroup;
 			children = (
 				79696644233024DB00D44AC2 /* Visualizer */,
-				79696641233023FB00D44AC2 /* Visualize */,
+				79696641233023FB00D44AC2 /* VizModel */,
 				79696640233023C100D44AC2 /* Renderer */,
-				7969663F233023AA00D44AC2 /* Model */,
+				7969663F233023AA00D44AC2 /* RenderModel */,
 				7969662C2330205400D44AC2 /* main.swift */,
 			);
 			path = LightBeam;
 			sourceTree = "<group>";
 		};
-		7969663F233023AA00D44AC2 /* Model */ = {
+		7969663F233023AA00D44AC2 /* RenderModel */ = {
 			isa = PBXGroup;
 			children = (
 				796966332330212700D44AC2 /* LightBeamModel.swift */,
@@ -91,7 +91,7 @@
 				796966392330229300D44AC2 /* Obstacle.swift */,
 				7969663B233022B600D44AC2 /* ViewPoint.swift */,
 			);
-			path = Model;
+			path = RenderModel;
 			sourceTree = "<group>";
 		};
 		79696640233023C100D44AC2 /* Renderer */ = {
@@ -102,12 +102,12 @@
 			path = Renderer;
 			sourceTree = "<group>";
 		};
-		79696641233023FB00D44AC2 /* Visualize */ = {
+		79696641233023FB00D44AC2 /* VizModel */ = {
 			isa = PBXGroup;
 			children = (
 				796966422330241000D44AC2 /* VizModel.swift */,
 			);
-			path = Visualize;
+			path = VizModel;
 			sourceTree = "<group>";
 		};
 		79696644233024DB00D44AC2 /* Visualizer */ = {

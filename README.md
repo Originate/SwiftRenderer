@@ -6,7 +6,10 @@ Created this project because value type in Swift is a great fit to math primitiv
 
 ## Light Beam
 
-Photon: emitted by light source -> a) travel towards a random direction -> b) interact with participating media -> c) interact with obstacle -> d) absorbed by the obstacle, or travel towards another direction based on the interaction with the obstacle -> repeat a) to d) until absorbed in d)
+![Image description](READMEMeta/dolphin-under-water.jpg)
+Image credit: How to Draw a Dolphin Underwater With Color Pencils - Wie malt man einen Delfin unter Wasser. https://www.youtube.com/watch?v=HETpyfd3104
+
+Photon: emitted by light source -> a) travel towards a random direction -> b) interact with participating media -> c) interact with obstacle -> d) absorbed by the obstacle, or travel towards another direction after the interaction with the obstacle -> repeat a) to d) until absorbed in d)
 
 - Perlin Noise for light beam pattern and intensities for obstacles like water and forest
 - Light source specification
