@@ -10,4 +10,9 @@ import Foundation
 
 struct LightSource {
     
+    var pos : Point3 = Point3()
+    
+    init() {
+        print("Initializing LightSource model..\n")
+    }
 }

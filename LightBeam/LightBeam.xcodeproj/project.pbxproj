@@ -16,6 +16,7 @@
 		7969663E2330230A00D44AC2 /* BeamRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7969663D2330230A00D44AC2 /* BeamRenderer.swift */; };
 		796966432330241000D44AC2 /* VizModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796966422330241000D44AC2 /* VizModel.swift */; };
 		79696646233024E700D44AC2 /* Visualizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79696645233024E700D44AC2 /* Visualizer.swift */; };
+		7969664A2331514200D44AC2 /* Vector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 796966492331514200D44AC2 /* Vector.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -41,6 +42,7 @@
 		7969663D2330230A00D44AC2 /* BeamRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeamRenderer.swift; sourceTree = "<group>"; };
 		796966422330241000D44AC2 /* VizModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VizModel.swift; sourceTree = "<group>"; };
 		79696645233024E700D44AC2 /* Visualizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Visualizer.swift; sourceTree = "<group>"; };
+		796966492331514200D44AC2 /* Vector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vector.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,15 +76,40 @@
 			isa = PBXGroup;
 			children = (
 				79696644233024DB00D44AC2 /* Visualizer */,
-				79696641233023FB00D44AC2 /* VizModel */,
 				79696640233023C100D44AC2 /* Renderer */,
-				7969663F233023AA00D44AC2 /* RenderModel */,
 				7969662C2330205400D44AC2 /* main.swift */,
 			);
 			path = LightBeam;
 			sourceTree = "<group>";
 		};
-		7969663F233023AA00D44AC2 /* RenderModel */ = {
+		79696640233023C100D44AC2 /* Renderer */ = {
+			isa = PBXGroup;
+			children = (
+				796966482331513500D44AC2 /* Math */,
+				79696647233150FB00D44AC2 /* Model */,
+				7969663D2330230A00D44AC2 /* BeamRenderer.swift */,
+			);
+			path = Renderer;
+			sourceTree = "<group>";
+		};
+		79696641233023FB00D44AC2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				796966422330241000D44AC2 /* VizModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		79696644233024DB00D44AC2 /* Visualizer */ = {
+			isa = PBXGroup;
+			children = (
+				79696641233023FB00D44AC2 /* Model */,
+				79696645233024E700D44AC2 /* Visualizer.swift */,
+			);
+			path = Visualizer;
+			sourceTree = "<group>";
+		};
+		79696647233150FB00D44AC2 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				796966332330212700D44AC2 /* LightBeamModel.swift */,
@@ -91,31 +118,15 @@
 				796966392330229300D44AC2 /* Obstacle.swift */,
 				7969663B233022B600D44AC2 /* ViewPoint.swift */,
 			);
-			path = RenderModel;
+			path = Model;
 			sourceTree = "<group>";
 		};
-		79696640233023C100D44AC2 /* Renderer */ = {
+		796966482331513500D44AC2 /* Math */ = {
 			isa = PBXGroup;
 			children = (
-				7969663D2330230A00D44AC2 /* BeamRenderer.swift */,
+				796966492331514200D44AC2 /* Vector.swift */,
 			);
-			path = Renderer;
-			sourceTree = "<group>";
-		};
-		79696641233023FB00D44AC2 /* VizModel */ = {
-			isa = PBXGroup;
-			children = (
-				796966422330241000D44AC2 /* VizModel.swift */,
-			);
-			path = VizModel;
-			sourceTree = "<group>";
-		};
-		79696644233024DB00D44AC2 /* Visualizer */ = {
-			isa = PBXGroup;
-			children = (
-				79696645233024E700D44AC2 /* Visualizer.swift */,
-			);
-			path = Visualizer;
+			path = Math;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,6 +188,7 @@
 			files = (
 				796966362330217500D44AC2 /* LightSource.swift in Sources */,
 				7969663C233022B600D44AC2 /* ViewPoint.swift in Sources */,
+				7969664A2331514200D44AC2 /* Vector.swift in Sources */,
 				7969662D2330205400D44AC2 /* main.swift in Sources */,
 				796966432330241000D44AC2 /* VizModel.swift in Sources */,
 				7969663E2330230A00D44AC2 /* BeamRenderer.swift in Sources */,

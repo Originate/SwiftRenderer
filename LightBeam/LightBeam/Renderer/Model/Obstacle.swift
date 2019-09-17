@@ -1,5 +1,5 @@
 //
-//  ViewPoint.swift
+//  Obstacle.swift
 //  LightBeam
 //
 //  Created by GypsyShen on 2019-09-16.
@@ -8,7 +8,9 @@
 
 import Foundation
 
-struct ViewPoint {
-    // pos
-    // dir
+struct Obstacle {
+    
+    init() {
+        print("Initializing Obstacle..\n")
+    }
 }

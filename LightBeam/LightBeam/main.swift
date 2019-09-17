@@ -8,7 +8,7 @@
 
 import Foundation
 
-print("Hello, Beam Renderer!")
+print("Hello, Beam Renderer!\n")
 
 let lightBeamModel = LightBeamModel()
 
@@ -16,7 +16,7 @@ let renderer = BeamRenderer()
 
 var viz = VizModel()
 
-viz.data = renderer.render(beamModel: lightBeamModel, width: viz.w, height: viz.h)
+viz.data = renderer.render(beamModel: lightBeamModel, width: viz.width, height: viz.height)
 
 let visualizer = Visualizer()
 

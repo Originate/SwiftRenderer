@@ -11,6 +11,10 @@ import Foundation
 struct Visualizer {
     
     func visualize(data: [Int]) -> Void {
-        
+        print("Visualizing the rendered result..\n")
+    }
+    
+    init() {
+        print("Initializing Visualizer..\n")
     }
 }
