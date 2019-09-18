@@ -21,7 +21,7 @@ struct BeamRenderer {
         
         print("Rendering light beam..\n")
         
-        let viewRays = computeViewDirections(viewFrustum: lightBeamModel.viewFrustum,
+        let viewRays = computeViewDirections(viewFrustum: beamModel.viewFrustum,
                                              width: w,
                                              height: h)
         
@@ -29,9 +29,9 @@ struct BeamRenderer {
         
         for vray in viewRays {
             let light = scatter(ray: vray,
-                                lightSource: lightBeamModel.lightSource,
-                                media: lightBeamModel.participatingMedia,
-                                obstacle: lightBeamModel.obstacle)
+                                lightSource: beamModel.lightSource,
+                                media: beamModel.participatingMedia,
+                                obstacle: beamModel.obstacle)
             
             result.append(light)
         }
@@ -50,27 +50,33 @@ struct BeamRenderer {
         
         var result = [Ray]()
         
-        let up : Vector3 = viewFrustum.right ^ viewPoint.dir
+        let up = viewFrustum.right ^ viewFrustum.dir
         
         // h/2 / d = tan(fov/2)
         let PI : Float = 3.1415926
-        let d : Float = height * 0.5 / atan(PI * viewFrustum.fov / 360)
+        let d : Float = Float(height) * 0.5 / atan(PI * viewFrustum.fov / 360.0)
         
         // r / u = width / height
         let u : Float = 1.0
-        let r : Float = u * width / height
+        let r : Float = u * Float(width) / Float(height)
         
         for w in 0..<width {
             for h in 0..<height {
-                let dir : Vector3 = viewPoint.pos + d * viewPoint.dir + u * up + r * viewPoint.right
+                
+                // TODO: fix direction calculation
+                
+//                let dir = (viewFrustum.pos + d * viewFrustum.dir) + u * ((h+0.5)/Float(height)) * up + r * ((w+0.5)/Float(width)) * viewFrustum.right
+                
+                let dir = Vector3(0, 0, 0)
                 
                 var vray = Ray()
-                vray.pos = viewPoint.pos
+                vray.pos = viewFrustum.pos
                 vray.dir = dir
                 
-                result.append(vpoint)
+                result.append(vray)
             }
         }
         
+        return result
     }
 }

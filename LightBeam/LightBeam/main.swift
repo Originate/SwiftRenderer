@@ -10,14 +10,28 @@ import Foundation
 
 print("Hello, Beam Renderer!\n")
 
-let lightBeamModel = LightBeamModel()
+//let lightBeamModel = LightBeamModel()
+//
+//let renderer = BeamRenderer()
+//
+//var viz = VizModel()
+//
+//viz.data = renderer.render(beamModel: lightBeamModel, width: viz.width, height: viz.height)
+//
+//let visualizer = Visualizer()
+//
+//visualizer.visualize(data: viz.data)
 
-let renderer = BeamRenderer()
+let right = Vector3(1, 0, 0)
 
-var viz = VizModel()
+let dir = Vector3(0, 0, -1)
 
-viz.data = renderer.render(beamModel: lightBeamModel, width: viz.width, height: viz.height)
+let up = right ^ dir
 
-let visualizer = Visualizer()
+let expected = Vector3(0, 1, 0)
 
-visualizer.visualize(data: viz.data)
+print("up: \(up.x), \(up.y), \(up.z)")
+
+print("expected: \(expected.x), \(expected.y), \(expected.z)")
+
+print("up == expected \(up == expected)")

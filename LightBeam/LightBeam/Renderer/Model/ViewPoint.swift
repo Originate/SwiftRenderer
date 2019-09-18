@@ -10,8 +10,8 @@ import Foundation
 
 struct ViewFrustum {
     var pos : Point3 = Point3()
-    var dir : Vector3 = Vector3(_x: 0, _y: 0, _z: -1)
-    var right : Vector3 = Vector3(_x: 1, _y: 0, _z: 0)
+    var dir : Vector3 = Vector3(0, 0, -1)
+    var right : Vector3 = Vector3(1, 0, 0)
     var fov : Float = 90
     
     init() {
@@ -21,7 +21,7 @@ struct ViewFrustum {
 
 struct Ray {
     var pos : Point3 = Point3()
-    var dir : Vector3 = Vector3(_x: 0, _y: 0, _z: -1)
+    var dir : Vector3 = Vector3(0, 0, -1)
     
     init() {
         print("Initializing ViewDirection..\n")
